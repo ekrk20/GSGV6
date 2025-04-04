@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Groove St Gallery</title>
+		<link href="CSS\css-style-sheet.css" rel="stylesheet" type="text/css">
+	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+<!--images put in href for picture to link-->
+	
+<!--navigation tag starts here-->	
+<!-- "selected" class allows the highlight on the navigation to emphasise which page the user is going to on the navigation-->
+
+	<nav>
+		
+		<a href="Images/Gallery-Logo-Alt.png">
+		<img src="Images/Gallery-Logo-Alt.png" alt="Groove St Gallery Logo" height="50" style="float:left;">
+		</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html" >Contact</a></li>
+			<li><a href="Gallery.html" class="selected">Picture Gallery</a></li>
+			<li><a href="Collections.html">Beauty in the Still Collection</a></li>
+		</ul>
+	</nav>
+
+	
+<!--navigation ends-->
+
+<main>
+	
+
+	<h1>Picture Gallery</h1>
+	<!--heading of page-->
+	
+	<!--the following has been sourced from W3schools for picture slideshow-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="Images/Gallery/alone-3031258_1920.jpg" style="width:100%">
+  <div class="text">Alone</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="Images/Gallery/antenna-502721-unsplash.jpg" style="width:100%">
+  <div class="text">Antenna</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="Images/Gallery/clem-onojeghuo-197522-unsplash.jpg" style="width:100%">
+  <div class="text">Clem-Onojeghuo</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="Images/Gallery/istanbul-168774_1920.jpg" style="width:100%">
+  <div class="text">Istanbul</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="Images/Gallery/samuel-zeller-74983-unsplash.jpg" style="width:100%">
+  <div class="text">Samuel Zeller</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="Images/Gallery/woman-1283009_1920.jpg" style="width:100%">
+  <div class="text">Women</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="Images/Gallery/yomex-owo-642611-unsplash.jpg" style="width:100%">
+  <div class="text">Yomex-Owo</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>  
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<!-- JavaScript page has been created to eliminate duplication with Gallery -->
+
+<script src="myScript.js"></script>
+
+	</main>
+
+<footer>
+	
+	<p><em> Keep in touch by following us on our website for updates, specials, and important announcements.</em></p>
+	<p>
+<!--images put in href for picture to link-->
+		<a href="Images/Gallery-Logo-Alt.png">
+	<img src="Images/Gallery-Logo-Alt.png" alt="Groove St Gallery Logo" 
+	width="100">
+	</a>
+</footer>
+
+    </body>
+
+
+	
+</html>

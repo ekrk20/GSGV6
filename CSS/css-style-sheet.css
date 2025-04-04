@@ -1,0 +1,238 @@
+/*The following has been created for all 5 web pages*/
+
+	/* this allows the change of text to sandre throught the webpages*/
+@font-face {
+  font-family: SANDRE;
+  src: url(../Sandre/SANDRE-Regular.ttf);
+}
+
+
+/* Navigation design*/ 
+
+nav {	
+  font-family: "sandre", "Bell MT", "Times New Roman";
+  min-height:50px;
+  background-color: #000;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Alternate Orange #f4af1b on hover for navigation */
+nav ul li a:hover {
+  background-color: #f4af1b;
+}
+
+/*Navigation ends*/
+
+
+
+/* main section changes - this puts in a border which is responsive to the change on screen size - includes color and padding*/
+
+main {
+  width: 70%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 15px solid black;
+  padding: 50px;
+  font-size: 24px;
+  background: #FFFFFF;
+
+}
+
+/* the following has been added to headings 1 and 2 including paragraphs for all pages, repeated formats have been grouped to increase efficiency. 
+   Bell MT has been chosen for 1st font - this is a legible font for users*/
+
+h1, h2, {
+  color: #000000;
+  font-family: "Bell MT", "Times New Roman";
+  margin-top:5px
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  color: #000000;
+  font-family:  "Bell MT", "Times New Roman";
+  font-size: 24px;
+  margin:10px
+}
+
+
+/* the following has been created to design the table in CONTACT */
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: #000000;
+  font-family: "Bell MT", "Times New Roman";
+  font-size: 24px;
+  margin:10px
+}
+
+	
+th {
+  height: 70px;
+  text-align: left;
+}
+tr:hover {background-color: #f4af1b;}
+	/* alternate orange used for highlight */
+th, td {
+  padding: 10px;
+}
+
+/* the following has been used to design the form in CONTACT */
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form {
+  color: #000000;
+  font-family: "Bell MT", "Times New Roman";
+  font-size: 24px;
+  margin:10px
+}
+
+/*Form end*/
+
+
+
+/*Slideshow in both Gallery and Collections*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Bell MT", "Times New Roman"
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f4af1b;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/* the following designs the footer for all pages - black background with white text - Alt logo has been used to ensure it is visible*/
+
+footer {
+  background-color: #000000;
+  border-radius: 8px;
+  margin: auto;   
+}
+
+footer p {
+  text-align:center;
+  font-size:18px;
+  color: #ffffff
+}

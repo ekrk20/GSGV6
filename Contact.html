@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Groove St Gallery</title>
+		<link href="CSS\css-style-sheet.css" rel="stylesheet" type="text/css">
+	</head>
+
+<body>
+
+<!--images put in href for picture to link-->
+	
+<!--navigation tag starts here-->	
+<!-- "selected" class allows the highlight on the navigation to emphasise which page the user is going to on the navigation-->
+
+	<nav>
+		
+		<a href="Images/Gallery-Logo-Alt.png">
+		<img src="Images/Gallery-Logo-Alt.png" alt="Groove St Gallery Logo" height="50" style="float:left;">
+		</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html" class="selected">Contact</a></li>
+			<li><a href="Gallery.html">Picture Gallery</a></li>
+			<li><a href="Collections.html">Beauty in the Still Collection</a></li>
+		</ul>
+	</nav>
+	
+
+<!--navigation ends-->
+
+<main>
+		
+
+	<h1>Contact</h1>
+	<!--heading of page-->
+	
+
+	<!--Contact information and paragraph as per guide-->
+
+
+
+<table>
+  <tr>
+    <th>Day</th><th>Opening Times</th>
+  </tr>
+  <tr>
+	<td>Monday</td>
+    <td>9am - 6pm</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>9am - 6pm</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>9am - 6pm</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>By Appointment Only</td>
+  </tr>
+   <tr>
+    <td>Friday</td>`
+    <td>9am - 6pm</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>10am - 5pm</td>
+  </tr>
+    <tr>
+    <td>Sunday</td>
+    <td>By Appointment Only</td>
+  </tr>
+ 
+</table>	
+			<p>Opening times corret as at:</p>
+			<p id="time"></p>
+
+			<script>
+			let text = document.lastModified;
+			document.getElementById("time").innerHTML = text;
+			</script>
+
+<br>
+	
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="Images\map.png" alt="map" width="200" style="float: right";>
+	
+	<script>
+function bigImg(x) {
+  x.style.height = "400px";
+  x.style.width = "600px";
+}
+
+function normalImg(x) {
+  x.style.height = "200px";
+  x.style.width = "300px";
+}
+</script>
+	
+<p>
+We are located in the centre of Edinburgh a few streets away from Haymarket Train Station.
+</p>
+
+<p>
+For help or more information about the gallery, or if you have any queries then please contact us via email at info@grovestgallery.com
+</p>
+<br>
+<br>
+
+
+<form id="frm1" action="" method="get" onsubmit="return validateForm()">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br> <!-- JavaScript form validation-->
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required><br><br> <!-- HTML5 form validation-->
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" required><br><br> <!-- HTML5 form validation-->
+  <label for="text">Message:</label><br>
+  <input type="message" id="message" name="message" required><br><br> <!-- HTML5 form validation-->
+  <input type="submit" value="Submit">
+</form>
+
+<button onclick="myFunction()">Check Form Data</button>
+
+<p id="check"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("check").innerHTML = text;
+}
+
+function validateForm() {
+  let x = document.forms["frm1"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+</script>
+
+<!--"required" added to esnure all fields in the form are completed, in addition 'get' allows me to test and view the form has submitted correctly-->
+
+
+
+	</main>
+	
+<footer>
+	
+	<p><em> Keep in touch by following us on our website for updates, specials, and important announcements.</em></p>
+	<p>
+<!--images put in href for picture to link-->
+		<a href="Images/Gallery-Logo-Alt.png">
+	<img src="Images/Gallery-Logo-Alt.png" alt="Groove St Gallery Logo" 
+	width="100">
+	</a>
+</footer>
+
+
+</body>
+</html>
